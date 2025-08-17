@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Portfolio Generator</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="index4.html">MY Portfolio</a>
+      <a href="index3.html">Contact</a>
+      <a href="index2.html">Continue Without login</a>
+    </nav>
+    <form action="" class="search-bar">
+      <input type="text" placeholder="Search...">
+      <button><i class='bx bx-search'></i></button>
+    </form>
+  </header>
+
+  <div class="container" id="form-container">
+    <h1>Enter Portfolio Information</h1>
+    <form id="portfolioForm">
+      <!-- Personal Information -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="profession">Your Profession</label>
+          <input type="text" id="profession" placeholder="Enter your profession" required>
+        </div>
+      </div>
+
+      <!-- About Yourself -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="description">About Yourself</label>
+          <textarea id="description" placeholder="Write about yourself..." rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="aboutImage">Upload About Me Image</label>
+          <input type="file" id="aboutImage" accept="image/*" required>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service1">Service 1</label>
+          <input type="text" id="service1" placeholder="Enter service name" required>
+          <textarea id="service1Desc" placeholder="Enter service description" rows="2" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="service2">Service 2</label>
+          <input type="text" id="service2" placeholder="Enter service name" required>
+          <textarea id="service2Desc" placeholder="Enter service description" rows="2" required></textarea>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="service3">Service 3</label>
+          <input type="text" id="service3" placeholder="Enter service name" required>
+          <textarea id="service3Desc" placeholder="Enter service description" rows="2" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="service4">Service 4</label>
+          <input type="text" id="service4" placeholder="Enter service name" required>
+          <textarea id="service4Desc" placeholder="Enter service description" rows="2" required></textarea>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="project1">Project 1</label>
+          <input type="text" id="project1" placeholder="Enter project name" required>
+          <textarea id="project1Desc" placeholder="Enter project description" rows="2" required></textarea>
+          <label for="project1Image">Upload Project Image</label>
+          <input type="file" id="project1Image" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label for="project2">Project 2</label>
+          <input type="text" id="project2" placeholder="Enter project name" required>
+          <textarea id="project2Desc" placeholder="Enter project description" rows="2" required></textarea>
+          <label for="project2Image">Upload Project Image</label>
+          <input type="file" id="project2Image" accept="image/*" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="project3">Project 3</label>
+          <input type="text" id="project3" placeholder="Enter project name" required>
+          <textarea id="project3Desc" placeholder="Enter project description" rows="2" required></textarea>
+          <label for="project3Image">Upload Project Image</label>
+          <input type="file" id="project3Image" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label for="project4">Project 4</label>
+          <input type="text" id="project4" placeholder="Enter project name" required>
+          <textarea id="project4Desc" placeholder="Enter project description" rows="2" required></textarea>
+          <label for="project4Image">Upload Project Image</label>
+          <input type="file" id="project4Image" accept="image/*" required>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="contactEmail">Contact Email</label>
+          <input type="text" id="contactEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="contactPhone">Contact Phone</label>
+          <input type="text" id="contactPhone" placeholder="Enter your phone number" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="contactAddress">Contact Address</label>
+          <input type="text" id="contactAddress" placeholder="Enter your address" required>
+        </div>
+      </div>
+
+      <button type="submit">Generate Portfolio</button>
+    </form>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
